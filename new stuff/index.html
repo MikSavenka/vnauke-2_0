@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vnauke.by</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/main.css" media="screen">
+<!--     HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    [if lt IE 9]>
+    <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script>
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23019901-1']);
+        _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+
+    <div class="container">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">Vnauke.by</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/sobytija">События</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/schkola" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Школа<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="/news">Новости</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/zhurnal-stil-zhizni" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Журнал<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/blogi" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Блоги
+                        участников<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/soobschestvo" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Сообщество<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="/o-proekte">О проекте</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/yes">Форум YES</a>
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Найти">
+                </div>
+                <button type="submit" class="btn btn-default">Найти</button>
+            </form>
+
+        </div>
+    </div>
+
+</nav>
+
+<div class="jumbotron no-color-padding-top">
+    <div class="row">
+        <div id="top" class="col-lg-8 col-md-7 col-sm-6">
+            <div id="logo"><a href="/"><img src="pics/logo_top_main.png" alt=""></a></div><!-- end #logo -->
+            <div id="logo-title"><p style="font-size:60pt; color:#272727;">науке.by</p></div>
+            <div id="logo-subtitle"><p style="font-size:18pt; font-style:italic; color:#272727;">первый
+                белорусский
+                <br> портал молодых ученых</p></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    (function () {
+        try {
+            var s, a, i, j, r, c, l = document.getElementsByTagName("a"), t = document.createElement("textarea");
+            for (i = 0; l.length - i; i++) {
+                try {
+                    a = l[i].getAttribute("href");
+                    if (a && a.indexOf("/cdn-cgi/l/email-protection") > -1 && (a.length > 28)) {
+                        s = '';
+                        j = 27 + 1 + a.indexOf("/cdn-cgi/l/email-protection");
+                        if (a.length > j) {
+                            r = parseInt(a.substr(j, 2), 16);
+                            for (j += 2; a.length > j && a.substr(j, 1) != 'X'; j += 2) {
+                                c = parseInt(a.substr(j, 2), 16) ^ r;
+                                s += String.fromCharCode(c);
+                            }
+                            j += 1;
+                            s += a.substr(j, a.length - j);
+                        }
+                        t.innerHTML = s.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        l[i].setAttribute("href", "mailto:" + t.value);
+                    }
+                } catch (e) {
+                }
+            }
+        } catch (e) {
+        }
+    })();
+    /* ]]> */
+</script>
+</body>
+</html>

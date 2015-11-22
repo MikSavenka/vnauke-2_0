@@ -1,0 +1,29 @@
+#logo {
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#logo-subtitle {
+    float: left;
+    margin-left: 205px;
+    margin-top: 120px;
+    position: absolute;
+}
+
+
+#logo-title {
+    float: left;
+    margin-left: 205px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.top20 {
+    margin-top: 20px;
+}
+
+.no-color-padding-top {
+    background-color: white;
+    padding-top: 0px;
+}
