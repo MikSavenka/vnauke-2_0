@@ -1,0 +1,594 @@
+/* 1. Elements
+-------------------------------------------------- */
+
+*	{ margin:0; padding:0; }
+html	{ padding:0; }
+
+body	{ color:#000; font:normal 76%/1.8em Arial; background:#f3f3f3; background-image: url(../img/top-fill.png); background-repeat:repeat-x; }
+
+a 			{ color:#a01517; text-decoration:none; border:0; outline:none; }
+a:hover 		{ text-decoration:underline; }
+
+hr			{ border:0 dashed #ccc; border-top-width:1px; clear:both; height:0; }
+hr.divider	{ margin:10px 0; }
+
+sub, sup	{ font-size:.8em; position:relative; }
+sub			{ top:.5em; }
+sup			{ top:-.5em; }
+small {font-size:0.7em;}
+img:hover {border-width:0px;}
+.cena {color:#990000; font-size:1.5em;}
+
+/* 2. Structure
+-------------------------------------------------- */
+
+.body				{ margin:0 auto; width:962px; position:relative; }
+#main				{ 
+							padding:30px 0 15px; 
+							overflow:auto; 
+						}
+.logo-seisi {
+color:#000; font:2.8em arial; font-weight:bold; margin:6px 0 5px; 
+}
+.zakaz-i-dostavka{
+color:#fff; font:1.4em arial; font-weight:normal; position:absolute; margin-left:800px;
+margin-top:0px;
+}
+.zakaz-prinimaetsia{
+color:#fff; font:1.4em arial; font-weight:normal; position:absolute; margin-left:490px;
+margin-top:0px;
+}
+.zakaz-vremia{
+color:#000; font:1.5em arial; font-weight:normal; position:absolute; margin-left:523px;
+margin-top:25px;
+}
+.logo-telephony {
+color:#ec2325; font:1.2em arial; font-weight:bold; position:absolute; margin-left:786px;
+margin-top:25px;
+}
+.logo-odo {
+color:#000; font:1.1em arial;
+		position:absolute;	margin-top:10px;
+	margin-left:80px;
+		position:absolute;
+}
+.logo-bnh {
+color:#000; font:1.1em arial;  	margin-top:75px;
+	margin-left:80px;
+		position:absolute;
+}
+.cristms-tree {height:98px; width:71px;
+	background-image: url(../img/cristmas-tree.jpg); 
+							background-repeat:no-repeat;
+								position:absolute;
+}
+.center-img{margin:0 auto;
+}
+.tovar-title{font-size:1.5em; text-align:center;
+}
+.tovar-title a{color:#000;
+}
+.more-but {				width:73px;
+					 height: 29px; 
+					 display:block; 	
+					 background-image: url(../img/button.png); 
+					background-repeat:no-repeat;
+					background-position:top;
+					font-size:0.9em;
+					text-align:center;
+					cursor:pointer;
+					float:left;
+
+}
+.more-but:hover {
+		width:73px;
+					 height: 29px; 
+					 display:block; 	
+					 background-image: url(../img/button.png); 
+					background-repeat:no-repeat;
+					background-position:bottom;
+					text-decoration:none!important;
+					
+}
+.more-but a:hover{
+color:#000;
+					text-decoration:none!important;
+}
+	#site_name_top {
+	margin-top:25px;
+	margin-left:80px;
+		position:absolute;
+		float:left;
+	}
+	#wrap {
+		
+		margin:0 auto;
+		width:962px;
+		display:block;
+		
+		
+	}
+	#header {
+		background-image:url(../img/header-bkg.png);
+		background-repeat: no-repeat;
+		height:171px;
+		width:954px;
+		padding-bottom:0px;
+		margin:0 auto;
+	}
+	
+ #menu_top {
+    position:absolute;
+    padding-top:110px;
+    padding-left:0px; 
+    height:57px;
+    width:980px;
+    }
+  
+    #menu_top ol{
+		 padding-left:30px;
+    margin:0px;
+    overflow: hidden;
+    list-style: none;
+}
+	#menu_top li{
+		padding-right:15px;
+display: block;
+	list-style: none;
+float:left;
+}
+#menu_top a {
+	color:#fff;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#toTop {
+	width:100px;
+        border:1px solid #ccc;
+        background:#f7f7f7;
+        text-align:center;
+        padding:5px;
+        position:fixed; /* this is the magic */
+        bottom:10px; /* together with this to put the div at the bottom*/
+        right:10px;
+        cursor:pointer;
+        display:none;
+        color:#333;
+        font-family:verdana;
+        font-size:11px;
+        z-index:5;
+}
+	#center_col {
+	width:650px; 
+	height:100%; 
+	float:right;
+	padding-left:35px;
+	margin-right:10px;
+	}
+		#right_col{
+	width:250px; 
+	height:auto!important;
+				
+		height:100%;
+		overflow:hidden		; /* Важное свойство, обрезается все, что выходит за рамки блока .box */
+		position:relative;
+		display:block;
+		background-color:#e9e7e3;
+	float:left;
+	}
+	.kwicks {  
+    list-style: none;  
+    position: relative;  
+    margin: 0;  
+    padding: 0;  
+}  
+.kwicks li{  
+    display: block;  
+    overflow: hidden;  
+    padding: 0;  
+    cursor: pointer;  
+}  
+.kwicks li{  
+    float: left;  
+    width: 235px;  
+    height: 150px;  
+    margin-right: 5px;  
+}  
+#kwick1 { 
+border-style:solid;
+border-width:1px;
+border-color:#ccc;  
+background-color: #fff;
+    /*background-color: #53b388;  */
+   
+}  
+#kwick1 a {display:block;
+width:235px;
+height:150px;
+background-image:url(../img/akcya-glukometr-za-19-000.jpg); 
+}
+
+#kwick2 {  
+border-style:solid;
+border-width:1px;
+border-color:#ccc;  
+background-color: #fff;
+   /* background-color: #5a69a9;  */
+   
+}  
+#kwick2 a {display:block;
+width:235px;
+height:150px;
+background-image:url(../img/akcya-glukometr-za-35-000.jpg); 
+}
+#kwick3 {  
+border-style:solid;
+border-width:1px;
+border-color:#ccc;  
+background-color: #fff;
+   /* background-color: #c26468;  */
+  
+} 
+#kwick3 a {display:block;
+width:271px;
+height:150px;
+background-image:url(../img/akcya-test-poloski50.jpg); 
+} 
+#kwick4 {   
+border-style:solid;
+border-width:1px;
+border-color:#ccc;  
+background-color: #fff;
+  /*  background-color: #bf7cc7; */ 
+  
+    margin-right: none;  
+}  
+#kwick4 a {display:block;
+width:235px;
+height:150px;
+background-image:url(../img/dostavka-tovarov-pochtoi-po-belarusi.jpg); 
+}  
+.usual {
+  background:#ccc;
+  color:#111;
+  padding:15px 20px;
+ 
+  border:1px solid #222;
+  margin:8px auto;
+}
+.usual li { list-style:none; float:left; }
+.usual ul a {
+  display:block;
+  padding:6px 10px;
+  text-decoration:none!important;
+  margin:1px;
+  margin-left:0;
+  font:10px Verdana;
+  color:#FFF;
+  background:#444;
+}
+.usual ul a:hover {
+  color:#FFF;
+  background:#111;
+  }
+.usual ul a.selected {
+  margin-bottom:0;
+  color:#000;
+  background:snow;
+  border-bottom:1px solid snow;
+  cursor:default;
+  }
+.usual div {
+  padding:10px 10px 8px 10px;
+  *padding-top:3px;
+  *margin-top:-15px;
+  clear:left;
+  background:snow;
+  font:10pt Georgia;
+}
+.usual div a { color:#000; font-weight:bold; }
+
+#usual2 { background:#0A0A0A; border:1px solid #1A1A1A; }
+#usual2 a { background:#222; }
+#usual2 a:hover { background:#000; }
+#usual2 a.selected { background:snow; }
+#tabs3 { background:#FF9; }
+#additional-items{
+width:650px;
+overflow:hidden;
+height:155px;
+margin-left:40px;
+}    
+.additional-items-li li{
+margin-left:10px;
+text-align:center;
+height:150px;
+}
+#otzyvi-vertical-slider{
+Width:230px;
+overflow:hidden;
+margin-left:10px;
+}
+.otzyvi-vertical-slider-li li{
+margin-bottom:10px;
+border: 1px solid #000;
+background-color:#fff;
+text-align:center;
+}
+.klass-icon {	background-image: url(../img/klass-icon.png); background-repeat:no-repeat;
+position:absolute; width:46px; height:46px;
+margin-top:116px; margin-left:215px;}
+.red-box {width: 380px; 
+
+		margin-top: 20px; 
+		margin-bottom: 20px; 
+		padding:10px; 
+		float:left; 
+		background-color:#ffcccc; 
+		border-style:solid; 
+		border-color:#990000;
+		border-width:2px;}
+.cena{color: #990000;
+    font-size: 1.5em;
+}
+.akcya-corner{background-image: url(../img/akcya-corner.png); background-repeat:no-repeat; height:66px;}
+.akcya-corner-page{background-image: url(../img/akcya-corner.png); background-repeat:no-repeat; height:66px; width:76px; position:absolute;}
+.instock-corner-page{background-image: url(../img/v-nalichii.png); background-repeat:no-repeat; height:20px; width:100px; position:absolute; margin-top:-1px; margin-left:155px;}
+.outstock-corner-page{background-image: url(../img/net-v-nalichii.png); background-repeat:no-repeat; height:20px; width:100px; position:absolute; margin-top:-1px; margin-left:155px;}
+.instock-corner-page-index{background-image: url(../img/v-nalichii.png); background-repeat:no-repeat; height:20px; width:100px; position:relative; margin:0 auto;}
+.outstock-corner-page-index{background-image: url(../img/net-v-nalichii.png); background-repeat:no-repeat; height:20px; width:100px; position:relative; margin:0 auto;}
+
+.instock{background-color:#66cc66; width:100px; margin:0 auto; padding:2px; text-align:center; border-width:1px; border-style:solid; border-color:#006600; color:#fff; font-size:1.0em;}
+.outstock{background-color:#cc3333; text-align:center; padding:2px; border-width:1px; border-style:solid; border-color:#660000; color:#fff; font-size:1.0em;}
+
+.down-rounder {background-image: url(../img/body-bottom.png); background-repeat:no-repeat; height: 9px;}
+.block				{ margin:0 10px 25px 10px; }
+.column				{ margin:0 10px; position:relative; float:left; }
+
+.col, .col4-1, .col4-2, .col4-3, .col3-1, .col3-2, .col2-1		{ float:left; }
+
+.col		{ width:100%; }
+.col4-1		{ width:240px; /* width:25%; */ }
+.col4-2		{ width:480px; /* width:50%; */ }
+.col4-3		{ width:720px; /* width:75%; */ }
+.col3-1		{ width:320px; /* width:33%; */ }
+.col3-2		{ width:640px; /* width:67%; */ }
+.col2-1		{ width:480px; /* width:50%; */ }
+
+.col.first, .col4-1.first, .col4-2.first, .col4-3.first, .col3-1.first, .col3-2.first, .col2-1.first	{ margin-left:0; clear:left; }
+	.clear_block {
+	width:100%;
+	height:10px;
+	float:left;
+	}
+	.citiessel li a.selected {color:#a01517;}
+	.prodssel li a.selected {color:#a01517;}
+	/*  Блоки на главной странице*/ 
+.news-item-index-block {float:left; width:203px; height:270px; margin-right:5px; margin-bottom:5px; border:1px solid #ccc; background-image:url(../img/wooden-style-bkg-item.jpg);  background-repeat:no-repeat;}	
+.item-title{position:absolute; margin-top:138px; margin-left:33px; font-size:1.2em; font-weight:bold; line-height:1.0em; text-align:center; width:143px; height:62px;}
+.item-title a{color:#000;
+}
+.best-price-block {height:auto!important;
+		padding:10px;
+		height:100%;
+		overflow:hidden		; /* Важное свойство, обрезается все, что выходит за рамки блока .box */
+		position:relative;
+		display:block;
+		background:#fff;
+
+/*background-image:url(../img/wooden-bkg-wallp.jpg);*/
+}	
+.stock {position:absolute; margin-top:112px; margin-left:56px; height:20px; width:100px;}
+.price-div{position:absolute; margin-top:200px; margin-left:0px; width:202px; height:auto;}
+/* 3. Headings
+-------------------------------------------------- */
+h1 {color:#000;  font-size:2.0em; margin-bottom:15px; padding:8px 8px 8px 40px;}
+h2	{ color:#a01517; font-size:1.1em; text-shadow:0 1px 0 #fff; margin-bottom:5px; padding-bottom:9px; padding-top:8px; padding-left:0px; text-align:center;  background-image:url(../img/zagolovok-h2-fill.png);  background-repeat:repeat-x; 
+border-left-style:solid; border-left-width:1px; border-left-color:#ccc; border-right-style:solid; border-right-width:1px; border-right-color:#ccc;}
+h2 a { color:#a01517;}
+.blockheader{ color:#a01517; font-size:1.1em; text-shadow:0 1px 0 #fff; margin-bottom:5px; padding-bottom:9px; padding-top:8px; padding-left:0px; text-align:center;  background-image:url(../img/zagolovok-h2-fill.png);  background-repeat:repeat-x; 
+border-left-style:solid; border-left-width:1px; border-left-color:#ccc; border-right-style:solid; border-right-width:1px; border-right-color:#ccc;}
+.blockheader a { color:#a01517;}
+h3	{ color:#000; font-size:1.2em; font-weight:900; margin:10px 0 5px; padding:8px 8px 8px 40px; background-position:10px 50%; background-repeat:no-repeat; }
+.page-name{ color:#000; font-size:1.1em; margin:10px 0 5px; padding:8px 8px 8px 40px; background-position:10px 50%; background-repeat:no-repeat; }
+
+.admin		{ background-image:url(../../../images/icons/default/prefs.png);  background-repeat:no-repeat; }
+.comments	{ background-image:url(../../../images/icons/default/comments.png); background-repeat:no-repeat; }
+.folder		{ background-image:url(../../../images/icons/default/folder.png); background-repeat:no-repeat; }
+.forums		{ background-image:url(../../../images/icons/default/forums.png); background-repeat:no-repeat; }
+.info		{ background-image:url(../../../images/icons/default/info.png);  background-repeat:no-repeat;}
+.message	{ background-image:url(../../../images/icons/default/message.png);  background-repeat:no-repeat;}
+.news		{ background-image:url(../../../images/icons/default/news.png);  background-repeat:no-repeat;}
+.online		{ background-image:url(../../../images/icons/default/online.png); background-repeat:no-repeat; }
+.page		{ background-image:url(../../../images/icons/default/page.png); background-repeat:no-repeat; }
+.pfs		{ background-image:url(../../../images/icons/default/pfs.png); background-repeat:no-repeat; }
+.plugin		{ background-image:url(../../../images/icons/default/plugin.png); background-repeat:no-repeat; }
+.polls		{ background-image:url(../../../images/icons/default/polls.png);  background-repeat:no-repeat;}
+.prefs		{ background-image:url(../../../images/icons/default/prefs.png);  background-repeat:no-repeat;}
+.queue		{ background-image:url(../../../images/icons/default/update.png); background-repeat:no-repeat; }
+.search		{ background-image:url(../../../images/icons/default/search.png);  background-repeat:no-repeat;}
+.stats		{ background-image:url(../../../images/icons/default/stats.png);  background-repeat:no-repeat;}
+.tags		{ background-image:url(../../../images/icons/default/tags.png);  background-repeat:no-repeat;}
+.users		{ background-image:url(../../../images/icons/default/users.png); background-repeat:no-repeat; }
+.warning	{ background-image:url(../../../images/icons/default/warning.png);  background-repeat:no-repeat;}
+
+div.error, div.warning, div.done, div.help		{ line-height:2em; margin:20px 0; padding:10px 50px; background-position:15px 50%; background-repeat:no-repeat; clear:both; }
+div.error									{ color:#d8000c; background-color:#ffbaba; background-image:url(../../../images/icons/default/error.png); border:1px solid #d8000c; }
+div.warning									{ color:#9f6000; background-color:#feefb3; background-image:url(../../../images/icons/default/warning.png); border:1px solid #9f6000; }
+div.done										{ color:#4f8a10; background-color:#dff2bf; background-image:url(../../../images/icons/default/done.png); border:1px solid #4f8a10; }
+div.help										{ color:#00529b; background-color:#bde5f8; background-image:url(../../../images/icons/default/help.png); border:1px solid #00529b; }
+
+/* 4. Tables
+-------------------------------------------------- */
+
+table td 	{ vertical-align:top; }
+
+table.flat	{ border-collapse:collapse; width:100%; }
+table.flat td 	{ padding:2px; margin:0; border:0; }
+
+table.main 	{ border-collapse:collapse; width:100%; }
+table.main td 	{ padding:2px 0; margin:0; border:0; }
+
+table.cells 	{ border-collapse:collapse; width:100%; }
+table.cells td	{ padding:4px 8px; border:1px solid #e7e7e7; }
+
+table.list 	{ border-collapse:collapse; width:100%; }
+table.list td 	{ padding:5px 5px 5px 0; border-bottom:1px dashed #ccc; }
+
+table.fico 		{ border-collapse:collapse; width:100%; }
+table.fico td		{ padding:5px 0; margin:0; border:0; }
+table.fico td img	{ margin-right:10px; vertical-align:middle; }
+
+.coltop		{ text-align:center; vertical-align:middle; font-size:.9em; background-color:#ddd!important; color:#000; }
+.coltop img	{ vertical-align:middle; }
+.centerall 	{ text-align:center; vertical-align:middle; }
+.valid 		{ height:48px; text-align:center; vertical-align:middle; border:0!important; }
+
+/* 5. Forms
+-------------------------------------------------- */
+
+form							{ }
+input, select, textarea, button	{ font:normal 1em Georgia; }
+input, select, button			{ padding:2px; }
+label input					{ vertical-align:middle; }
+button::-moz-focus-inner		{ padding:0; border:none; }
+
+/* 6. Misc
+-------------------------------------------------- */
+
+.odd	{ background-color:#fff!important; }
+.even	{ background-color:#f1f1f1!important; }
+.code 	{ color:#000; background:#e3e3e3; border:1px solid #ccc; padding:2px 15px; margin:5px 0; font-family:monospace; font-size:1.1em; white-space:pre-wrap; }
+
+.clear	{ clear:both; }
+.lhn	{ line-height:normal; }
+.strong	{ font-weight:900; }
+.italic	{ font-style:italic; }
+
+.small	{ font-size:.9em!important; line-height:1.6em; }
+.large	{ font-size:1.1em!important; }
+
+.lower		{ text-transform:lowercase; }
+.upper		{ text-transform:uppercase; }
+.capital	{ text-transform:capitalize; }
+
+.hidden		{ display:none; }
+.invis		{ visibility:hidden; }
+
+.textleft		{ text-align:left; }
+.textcenter		{ text-align:center; }
+.textright		{ text-align:right; }
+.textjustify	{ text-align:justify; }
+
+.floatleft		{ float:left; }
+.floatright		{ float:right; }
+
+.grey			{ color:#999; }
+
+.colleft		{ float:left; margin:5px 15px 0 0; }
+.colright		{ float:right; margin:5px 0 0 15px; }
+
+.margintop10	{ margin-top:10px; }
+.marginright10	{ margin-right:10px; }
+.marginbottom10	{ margin-bottom:10px; }
+.marginleft10	{ margin-left:10px; }
+.margin10		{ margin:10px!important; }
+.margin0		{ margin:0!important; }
+
+.paddingtop10	{ padding-top:10px; }
+.paddingright10	{ padding-right:10px; }
+.paddingbottom10{ padding-bottom:10px; }
+.paddingleft10	{ padding-left:10px; }
+.padding10		{ padding:10px!important; }
+.padding0		{ padding:0!important; }
+
+.border0		{ border:0!important; }
+
+.width5		{ width:5%; }
+.width10	{ width:10%; }
+.width15	{ width:15%; }
+.width20	{ width:20%; }
+.width25	{ width:25%; }
+.width30	{ width:30%; }
+.width35	{ width:35%; }
+.width40	{ width:40%; }
+.width45	{ width:45%; }
+.width50	{ width:50%; }
+.width55	{ width:55%; }
+.width60	{ width:60%; }
+.width65	{ width:65%; }
+.width70	{ width:70%; }
+.width75	{ width:75%; }
+.width80	{ width:80%; }
+.width85	{ width:85%; }
+.width90	{ width:90%; }
+.width95	{ width:95%; }
+.width100	{ width:100%; }
+
+.desc		{ font-size:.9em; margin:5px 0; padding:5px 0; background:#e9e9e9; border:1px solid #ccc; border-left:0; border-right:0; overflow:auto; }
+.desc strong	{ color:#fff; margin-right:8px; padding:2px 6px; background:#aaa; }
+
+.combox		{ font-size:2em; text-align:center; margin:0 10px 5px 0; padding-top:6px; height:42px; width:48px; background:url(../img/comments.png) no-repeat 0 0; float:left; }
+.textbox	{ margin-bottom:10px; overflow:auto; }
+
+.readmore	{ display:block; }
+.download	{ margin:10px 0; padding:10px 0 10px 84px; background:url(../img/download.png) no-repeat 10px 12px; border:1px dashed #c00; }
+
+.clearfix:before, .clearfix:after	{ content:'\0020'; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
+.clearfix:after						{ clear:both; }
+.clearfix							{ zoom:1; }
+
+/* 7. Pagination
+-------------------------------------------------- */
+
+.paging		{ margin:10px 0 20px 0; text-align:center; font-size:.9em; }
+.paging img	{ vertical-align:-3px; }
+.paging span	{ border:1px dashed #7f7772; padding:2px 8px; margin:1px; }
+
+.pagenav_prev, .pagenav_next, .pagenav_first, .pagenav_last, .pagenav_pages, .pagenav_current { padding:2px 6px; margin:1px; border:1px dashed #7f7772; }
+.pagenav_prev a, .pagenav_next a, .pagenav_first a, .pagenav_last a, .pagenav_pages a	{ color:#555; }
+.pagenav_current	{ font-weight:900; color:#fff; background:none!important; border:none!important; }
+.pagenav_current a	{ color:#555; }
+.pagenav_small		{ text-align:right; font-size:.9em; }
+
+.spaced				{ border:none!important; margin:0 8px!important; padding:0!important; }
+#magnifier		{ margin:0 0 0 170px; height:36px; width:310px; position:absolute; margin-left:700px; margin-top:108px; z-index:5; }
+/* 8. Comments
+-------------------------------------------------- */
+
+.comments1, .comments2	{ margin-bottom:10px; float:left; position:relative; }
+.comments1				{ width:20%; }
+.comments2				{ width:80%; }
+
+/* 9. Polls
+-------------------------------------------------- */
+
+.bar_front 	{ background-color:#cde8fb; border-right:0px solid #333; color:#ddd; height:8px; font-size:1px; }
+.bar_back 	{ background-color:#fff; border:1px solid #333; height:8px; }
+
+/* 10. Forums
+-------------------------------------------------- */
+
+.b1 img			{ margin:0 5px 0 0; vertical-align:-5px!important; }
+.userstatus		{ margin-top:2px; float:right; }
+.forumssection	{ font-weight:900; background:#eee; }
+.subforums img	{ vertical-align:-3px; margin-right:5px; }
+#newf			{ margin:10px 0; }
+#newf li			{ margin-right:10px; display:inline; }
+
+/* 11. Search
+-------------------------------------------------- */
+
+.search-res			{ margin:0 0 10px; overflow:auto; }
+.search-res .small	{ color:#000; }
+.search-hl      		{ font-weight:900; padding:0 2px; background:yellow; }
+
+/* 12. Lists
+-------------------------------------------------- */
+
+ul.bullets li						{ padding-left:25px; background:url(../img/bullets.png) no-repeat 5px 2px; }
+ul.bullets li a {color:#000;}
+ul.plus li						{ padding-left:25px; background:url(../img/edit_add.png) no-repeat 5px 2px; }
+
+ol								{ margin-left:20px; list-style-type:decimal; }
+#usergrouplist ul li:first-child a	{ color:#900; }

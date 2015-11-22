@@ -1,0 +1,99 @@
+
+<!-- BEGIN: MAIN -->
+<div id="right_col">
+<!-- IF {PHP.WORKING_HOURS} -->
+<!-- ELSE -->
+<div>
+
+				<h2 class="shop">Сделать заказ:</h2>
+{PHP.SHOPCART} 
+
+</div> 
+<!-- ENDIF -->
+{PHP.cfg.freetext5}
+	<br />
+{PAGE_RIGHT_COLUMN_ADDONS}
+{PHP.cfg.freetext1}
+{PHP.cfg.freetext2}
+{PHP.cfg.freetext3}
+
+</div>
+<div id="center_col"> 
+<!-- IF {PAGE_SALE} -->
+<div class="akcya-corner-page"></div> <!-- ENDIF -->
+<div style="float:left; margin-right:25px; margin-left:-5px;  width:225px; height:auto; owerflow:hidden;"><img src="{PAGE_TOVAR_PICTURE}" alt="{PAGE_TOVAR_PICTURE_ALT}" /> 
+<!-- IF {PAGE_NALICHIE} --><p class="instock">Есть в наличии</p><!-- ELSE --><p class="outstock">Нет в наличии</p><!-- ENDIF -->
+<!-- IF {PAGE_SALE_PRICE} --><p style="text-align:center; margin-top:10px;">Акция! Цена: <strong style="color:#990000;  font-size:2.3em;">{PAGE_SALE_PRICE}</strong> бел. руб.</p><!-- ENDIF -->
+
+<p style="text-align:center; margin-top:10px; margin-bottom:5px;">Цена: <strong style="color:#990000;  font-size:2.3em;">{PAGE_CENA}</strong> бел. руб.</p>
+<!-- IF {PHP.WORKING_HOURS} -->
+<!-- ELSE -->
+<!-- IF {PAGE_SHOP_INSTOCK} != 0 --><div class="more-but" style="margin-left:75px;"><a href="{PAGE_SHOP_BUYURL}">В корзину</a></div><!-- ENDIF -->
+<!-- ENDIF -->
+
+
+</div>
+
+<h1>{PAGE_TOVAR_TITLE}</h1>
+
+{PAGE_TEXT}
+
+<br />
+<!-- IF {PAGE_TABS} -->
+{PAGE_TABS_HTML}
+<!-- ENDIF -->
+
+<h2>C этим товаром также покупают:</h2>
+<div id="additional-items">
+<!-- IF {PAGE_TOVAR_CONNECTED} -->
+{PAGE_TOVAR_CONNECTED}
+<!-- ELSE -->
+<ul class="additional-items-li">
+<li><div><a href="http://seisimed.by/shop/glukometry/Gljukometr-Finetest-Premium.htm"><img src="http://seisimed.by/images/catalog/thumb/finetest-premium-glukometr.png"/></a> <p> <a href="http://seisimed.by/shop/glukometry/Gljukometr-Finetest-Premium.htm">Глюкометр Finetest Premium</a></p></div></li>
+<li><div><a href="http://seisimed.by/shop/glukometry/Gljukometr-Finetest.htm"><img src="http://seisimed.by/images/catalog/thumb/finetest-classic-glukometr-thumb.png"/></a> <p> <a href="http://seisimed.by/shop/glukometry/Gljukometr-Finetest.htm">Глюкометр Finetest</a></p></div></li>
+<li><div><a href="http://seisimed.by/shop/rashodniye_materialy/Finetest-Auto-Coding-Premium-test-poloski-25.htm"><img src="http://seisimed.by/pictures/Thumb/finetest-premium-test-poloski-25-thumb.png"/></a> <p> <a href="http://seisimed.by/shop/rashodniye_materialy/Finetest-Auto-Coding-Premium-test-poloski-25.htm">Тест-полоски Finetest Premium 25 шт.</a></p></div></li>
+<li><div><a href="http://seisimed.by/shop/rashodniye_materialy/finetest-premium-test-poloski-50.htm"><img src="http://seisimed.by/pictures/Thumb/finetest-premium-test-poloski-50-thumb.png"/></a><p> <a href="http://seisimed.by/shop/rashodniye_materialy/finetest-premium-test-poloski-50.htm">Тест-полоски Finetest Premium 50 шт.</a></p></div></li>
+<li><div><a href="http://seisimed.by/shop/rashodniye_materialy/Finetest-test-poloski-25.htm"><img src="http://seisimed.by/pictures/Thumb/finetest-test-poloski-25-thumb.png"/></a><p> <a href="http://seisimed.by/shop/rashodniye_materialy/Finetest-test-poloski-25.htm">Тест-полоски Finetest 25шт.</a></p></div></li>
+<li><div><a href="http://seisimed.by/shop/rashodniye_materialy/Finetest-test-poloski-50.htm"><img src="http://seisimed.by/pictures/Thumb/Finetest-Test-Stripes-50-Thumb.jpg"/></a><p> <a href="http://seisimed.by/shop/rashodniye_materialy/Finetest-test-poloski-50.htm">Тест-полоски Finetest 50 шт.</a></p></div></li>
+<li><div><a href="http://seisimed.by/shop/rashodniye_materialy/Lancety-Finetest-v-upakovke-25-sht.htm"><img src="http://seisimed.by/pictures/Thumb/Finetest-lancets-thumb.jpg"/></a><p> <a href="http://seisimed.by/shop/rashodniye_materialy/Lancety-Finetest-v-upakovke-25-sht.htm">Ланцеты Finetest 25 шт.</a></p></div></li>
+<li><div><a href="http://seisimed.by/shop/rashodniye_materialy/Lancetnoe-ustrojstvo-Finetest.htm"><img src="http://seisimed.by/pictures/Thumb/Finetest-lancetnoe-ustroinstvo-thumb.jpg"/></a> <p><a href="http://seisimed.by/shop/rashodniye_materialy/Lancetnoe-ustrojstvo-Finetest.htm">Ланцетное устройство Finetest</a></p></div></li>
+<li><div><a href="http://seisimed.by/shop/veino_plus/Stimuljator-venoznogo-ottoka-VeinoPlus.htm"><img src="http://seisimed.by/pictures/Thumb/Veino-Plus-In-Box-Thumb.jpg"/></a><p><a href="http://seisimed.by/shop/veino_plus/Stimuljator-venoznogo-ottoka-VeinoPlus.htm">Стимулятор венозного оттока VeinoPlus (Вено-плюс)</a></p></div></li>
+<li><div><a href="http://seisimed.by/shop/kosmetika-dlya-nog/Krem-Fusspunkt-Chudo-ot-trewin-150-ml.htm"><img src="http://seisimed.by/pictures/Thumb/FussPunkt-chudo-ot-orewin-thumb.jpg"/></a> <p><a href="http://seisimed.by/shop/kosmetika-dlya-nog/Krem-Fusspunkt-Chudo-ot-trewin-150-ml.htm">Крем для стоп "Чудо от трещин", 150 мл.</a></p></div></li>
+
+</ul>
+<!-- ENDIF -->
+</div>
+
+
+
+					<!-- BEGIN: PAGE_FILE -->
+						<div class="download">
+							<!-- BEGIN: MEMBERSONLY -->
+							<p>{PAGE_SHORTTITLE}</p>
+							<!-- END: MEMBERSONLY -->
+							<!-- BEGIN: DOWNLOAD -->
+							<p>{PHP.L.Download}: <a class="strong" href="{PAGE_FILE_URL}">{PAGE_SHORTTITLE}</a></p>
+							<!-- END: DOWNLOAD -->
+							<p>{PHP.L.Filesize}, kB: {PAGE_FILE_SIZE}{PHP.L.kb}</p>
+							<p>{PHP.L.Downloaded}: {PAGE_FILE_COUNT}</p>
+						</div>
+					<!-- END: PAGE_FILE -->
+<!-- BEGIN: PAGE_ADMIN -->
+			<div class="block">
+				<h2>{PHP.L.Adminpanel}</h2>
+				<ul class="bullets">
+					<!-- IF {PHP.usr.isadmin} -->
+					<li><a href="admin.php">{PHP.L.Adminpanel}</a></li>
+					<!-- ENDIF -->
+					<li><a href="page.php?m=add&amp;c={PAGE_CAT}">{PHP.L.page_addtitle}</a></li>
+					<li>{PAGE_ADMIN_UNVALIDATE}</li>
+					<li>{PAGE_ADMIN_EDIT}</li>
+				</ul>
+			</div>
+			<!-- END: PAGE_ADMIN -->
+			</div>
+		
+
+
+
+<!-- END: MAIN -->
